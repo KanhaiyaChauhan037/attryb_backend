@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 })
 
 app.use("/dealerItem", dealerRouter)
-// app.use(auth)
+app.use(auth)
 app.use("/marketItem", MarketRouter)
 app.use("/OEM", OEMRouter)
 app.use('/', MarketprRouter)
